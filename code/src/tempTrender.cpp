@@ -33,6 +33,8 @@ void tempTrender::covariance(std::string& file2Path){
     Double_t temp1;
     Double_t temp2;
 
+    //initiate the canvas
+    TCanvas *c1 = new TCanvas("c1","Covariance Plot",900,600);
     //initiate the graph
     TGraph* plot = new TGraph();
 
@@ -72,15 +74,15 @@ void tempTrender::covariance(std::string& file2Path){
 
     size_t start = filePath_m.find_last_of('/');
     size_t end = filePath_m.find_last_of('.');
-    std::string c1 = filePath_m.substr(start+1,end-start-1);
+    std::string city1 = filePath_m.substr(start+1,end-start-1);
 
     start = file2Path.find_last_of('/');
     end = file2Path.find_last_of('.');
-    std::string c2 = file2Path.substr(start+1,end-start-1);
+    std::string city2 = file2Path.substr(start+1,end-start-1);
 
     plot->SetName("Covariance");
-    plot->GetXaxis()->SetTitle(c1.c_str());
-    plot->GetYaxis()->SetTitle(c2.c_str());
+    plot->GetXaxis()->SetTitle(city1.c_str());
+    plot->GetYaxis()->SetTitle(city2.c_str());
     plot->SetTitle("Covariance Plot");
     plot->Draw("A*");
 }
