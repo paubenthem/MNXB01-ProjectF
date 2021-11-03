@@ -1,10 +1,16 @@
-#ifndef COVTRENDER_H
-#define COVTRENDER_H
+#ifndef TIMEPOINT
+#define TIMEPOINT
 
 class TimePoint{
     public:
 
         explicit TimePoint(int Y, int M, int D, int hr, int min);
+
+        int getYear(){return year;}
+        int getMonth(){return month;}
+        int getDay(){return day;}
+        int getHour(){return hour;}
+        int getMinuet(){return minuet;}
 
         TimePoint operator+(int min);
 

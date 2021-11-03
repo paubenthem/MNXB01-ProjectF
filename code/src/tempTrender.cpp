@@ -1,9 +1,9 @@
 #include <iostream>
-#include "tempTrender.h"
+#include "../include/tempTrender.h"
 
 tempTrender::tempTrender(const std::string& filePath) {
 	std::cout << "The user supplied " << filePath <<" as the path to the data file.\n";
-	std::cout << "You should probably store this information in a member variable of the class! Good luck with the project! :)\n";
+    filePath_m = filePath;
 }
 
 // void tempTrender::tempOnDay(int monthToCalculate, int dayToCalculate) const {} //Make a histogram of the temperature on this day
@@ -11,3 +11,64 @@ tempTrender::tempTrender(const std::string& filePath) {
 // void tempTrender::tempPerDay() const {} //Make a histogram of the average temperature of each day of the year
 // void tempTrender::hotCold() const {} //Make a histogram of the hottest and coldest day of the year
 // void tempTrender::tempPerYear(int yearToExtrapolate) const {} //Make a histogram of average temperature per year, then fit and extrapolate to the given year
+
+
+void tempTrender::covariance(std::string& file2Path){
+
+    std::cout << "The second file path is "<< file2Path << "\n";
+    
+    //open files
+    ifstream f1(filePath_m);
+    ifstream f2(file2Path);
+
+    //variables to load
+    Int_t year;
+    Int_t month;
+    Int_t day;
+    Int_t hour;
+    Int_t min;
+    Int_t sec;
+
+    //variables for temperature
+    Double_t temp1;
+    Double_t temp2;
+
+    //initiate the graph
+    TGraph* plot = new TGraph();
+
+    //load first lines
+    f1 >> year >> month >> day >> hour >> min >> sec >> temp1;
+    TTimeStamp t1(year, month, day, hour, min, sec);
+    f2 >> year >> month >> day >> hour >> min >> sec >> temp2;
+    TTimeStamp t2(year, month, day, hour, min, sec);
+    
+    while (true){
+        //std::cout << t1.AsString("s") << "\t" << t2.AsString("s") << "\n";
+        if (t1 == t2){
+            //add point to plot
+            plot->AddPoint(temp1,temp2);
+            //load next point
+            if (f1.peek() == EOF || f2.peek() == EOF){
+                break;
+            }
+            f1 >> year >> month >> day >> hour >> min >> sec >> temp1;
+            t1.Set(year, month, day, hour, min, sec,0,kTRUE,0);
+            f2 >> year >> month >> day >> hour >> min >> sec >> temp2;
+            t2.Set(year, month, day, hour, min, sec,0,kTRUE,0);
+        }else if (t1 < t2){
+            //load next point
+            if (f1.peek() == EOF){break;}
+            f1 >> year >> month >> day >> hour >> min >> sec >> temp1;
+            t1.Set(year, month, day, hour, min, sec,0,kTRUE,0);
+        }else {
+            //load next point
+            if (f2.peek() == EOF){break;}
+            f2 >> year >> month >> day >> hour >> min >> sec >> temp2;
+            t2.Set(year, month, day, hour, min, sec,0,kTRUE,0);
+        }
+    }
+    plot->GetXaxis()->SetTitle("This city");
+    plot->GetYaxis()->SetTitle("Other city");
+    plot->SetTitle("Covariance Plot");
+    plot->Draw("A*");
+}

@@ -13,7 +13,7 @@ void rootlogon() {
   // Tell the compiler where to look for headers. Use the same kinds of flags
   //  that you've seen in the course. Note that paths cannot be relative or use
   //  ~
-  gSystem->AddIncludePath("-I/home/einarelen/project/include");
+  gSystem->AddIncludePath("-I/home/ender/Documents/workspace/uni/NOTES/programing-intro-c++/MNXB01-ProjectF/code/include/");
   //  You can add multiple flags if you have multiple directories to add
   // gSystem->AddIncludePath("-I/home/einarelen/project/include -I/home/einarelen/project/external/include");
   // Or you can keep adding them one by one, which looks neater

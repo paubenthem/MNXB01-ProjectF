@@ -35,3 +35,5 @@
 #ignore the preprocessed data foulder
 data_clean/*
 
+code/*ACLiC*
+code/src/*ACLiC*
