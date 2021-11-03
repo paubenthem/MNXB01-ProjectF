@@ -174,9 +174,7 @@ void tempTrender::covariance(std::string& file2Path, int minuet_timeLag){
     Int_t idx=0;
 
     while (true){
-        if (idx % 1000== 0){
-            std::cout << t1.AsString("s") << "\t" << t2.AsString("s") << "\n";
-        }
+        //std::cout << t1.AsString("s") << "\t" << t2.AsString("s") << "\n";
         if (t1 == t2){
             //add point to plot
             plot->SetPoint(idx++,temp1,temp2);
@@ -200,6 +198,8 @@ void tempTrender::covariance(std::string& file2Path, int minuet_timeLag){
             t2.Set(year, month, day, hour, min + minuet_timeLag, sec,0,kTRUE,0);
         }
     }
+
+    std::cout << "number of points plotted:" << idx <<"\n";
 
     size_t start = filePath_m.find_last_of('/');
     size_t end = filePath_m.find_last_of('.');

@@ -2,7 +2,7 @@
 #include <string>
 
 void project() {
-	const std::string pathToFile = "src/Falsterbo.csv"; //Put the path to your data file here
+	const std::string pathToFile = "../data_clean/Falsterbo.csv"; //Put the path to your data file here
 
 
 	tempTrender t(pathToFile); //Instantiate your analysis object
