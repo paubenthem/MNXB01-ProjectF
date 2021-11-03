@@ -8,6 +8,6 @@ void project() {
 	tempTrender t(pathToFile); //Instantiate your analysis object
 	
 	t.tempOnDay(8, 23); //Call some functions that you've implemented
-	t.tempOnDay(235);
-  t.tempPerDay();
+	//t.tempOnDay(235);
+    t.tempPerDay();
 }
