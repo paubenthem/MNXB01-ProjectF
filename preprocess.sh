@@ -2,7 +2,7 @@
 
 mkdir data_clean
 
-for file in $1/*
+for file in $1/*.csv
 do
     CITYNAME=$(cat ${file} | sed '2q;d' | cut -d';' -f1)
     echo ${CITYNAME}
