@@ -2,15 +2,20 @@
 #define COVTRENDER_H
 
 #include <string>
-class tempTrender {
+#include <vector>
+
+
+class covTrender {
 	public:
-	explicit tempTrender(const std::string& file1Path, const std::string& file2Path); //Construct using the specified file
-	~tempTrender() {} //Destructor
+	explicit covTrender(const std::string& file1Path, const std::string& file2Path); //Construct using the specified file
+	~covTrender() {} //Destructor
 
     void cov() const;
-    void cov(int lag) const; //the lag is how many times we multiply the minimum time step
+    void cov(int lag) const; //the lag is in minuets
 
 	private:
+        
+
 	
 };
 #endif
