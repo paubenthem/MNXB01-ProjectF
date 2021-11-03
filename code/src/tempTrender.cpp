@@ -34,7 +34,7 @@ void tempTrender::tempPerDay() const {
 
     TH1D* hTemp = new TH1D("hTemp", "Mean temperature change throughout the year; Day of the year; Mean temperature", 
                 366, 1, 367);
-    ifstream file("/home/an2228pas/Proj/MNXB01-ProjectF/code/src/Falsterbo.csv");
+    ifstream file(filePath_m);
 
     TTimeStamp prev_stamp(0, 0, 0, 0, 0, 0, 0);
     Int_t first = 1;
@@ -175,6 +175,10 @@ void tempTrender::tempOnDay(int dateToCalculate) const  //Make a histogram of th
 
 
 void tempTrender::covariance(std::string& file2Path){
+    covariance(file2Path, 0);
+}
+
+void tempTrender::covariance(std::string& file2Path, int minuet_timeLag){
 
     std::cout << "The second file path is "<< file2Path << "\n";
     
@@ -203,12 +207,14 @@ void tempTrender::covariance(std::string& file2Path){
     f1 >> year >> month >> day >> hour >> min >> sec >> temp1;
     TTimeStamp t1(year, month, day, hour, min, sec);
     f2 >> year >> month >> day >> hour >> min >> sec >> temp2;
-    TTimeStamp t2(year, month, day, hour, min, sec);
+    TTimeStamp t2(year, month, day, hour, min+minuet_timeLag, sec);
     
     Int_t idx=0;
 
     while (true){
-        //std::cout << t1.AsString("s") << "\t" << t2.AsString("s") << "\n";
+        if (idx % 1000== 0){
+            std::cout << t1.AsString("s") << "\t" << t2.AsString("s") << "\n";
+        }
         if (t1 == t2){
             //add point to plot
             plot->SetPoint(idx++,temp1,temp2);
@@ -219,7 +225,7 @@ void tempTrender::covariance(std::string& file2Path){
             f1 >> year >> month >> day >> hour >> min >> sec >> temp1;
             t1.Set(year, month, day, hour, min, sec,0,kTRUE,0);
             f2 >> year >> month >> day >> hour >> min >> sec >> temp2;
-            t2.Set(year, month, day, hour, min, sec,0,kTRUE,0);
+            t2.Set(year, month, day, hour, min + minuet_timeLag, sec,0,kTRUE,0);
         }else if (t1 < t2){
             //load next point
             if (f1.peek() == EOF){break;}
@@ -229,7 +235,7 @@ void tempTrender::covariance(std::string& file2Path){
             //load next point
             if (f2.peek() == EOF){break;}
             f2 >> year >> month >> day >> hour >> min >> sec >> temp2;
-            t2.Set(year, month, day, hour, min, sec,0,kTRUE,0);
+            t2.Set(year, month, day, hour, min + minuet_timeLag, sec,0,kTRUE,0);
         }
     }
 
