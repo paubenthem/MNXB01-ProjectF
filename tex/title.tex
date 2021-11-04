@@ -1,0 +1,48 @@
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+
+\begin{comment}
+    \usepackage{amssymb}
+    \usepackage{enumerate}
+    \usepackage{array}
+    \usepackage{mathrsfs}
+    \usepackage{tikz}
+    \addto\captionsswedish{
+        \renewcommand\appendixname{Bilaga}
+        \renewcommand\appendixpagename{Bilaga}
+        \renewcommand\appendixtocname{Bilaga}
+    }
+    \tikzset{node distance=2cm, auto}
+    \usetikzlibrary{arrows}
+    \allowdisplaybreaks
+\end{comment}
+
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{16}{19.2}\selectfont\@title}{}{}
+\makeatother
+
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+\begin{titlepage}
+		\centering
+		\includegraphics[width=0.3\textwidth]{logo}\par\vspace{1cm}
+		{\scshape\LARGE Lund's University \par}
+		{\scshape\large The Faculty of Science, 
+Department of Mathematics\par}
+		\vspace{0.2cm}
+		{\huge\bfseries MNXB01 Project Report, Group F\par}
+		\vspace{2cm}
+		{\Large\itshape Paulina Benthem Ciano, Dustin Lindner Daii,\\ Edmund Lehsten, Anton Palets \par}
+		{\scshape Course: MNXB01}
+		\par
+		\vfill
+	   
+		
+		\vfill
+		
+		% Bottom of the page
+		{\large \today\par}
+	\end{titlepage}
+	\newpage
+	\newpage
+	\title{}
+\newpage

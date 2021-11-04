@@ -1,0 +1,64 @@
+\documentclass[]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\usepackage[swedish]{babel}
+\usepackage[toc,page]{appendix}
+\usepackage{tikz, tkz-euclide}
+\usepackage{textgreek}
+\usepackage{blindtext}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows}
+\usepackage{siunitx}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{siunitx}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{graphicx}%package to manage images
+\graphicspath{{images/}}
+\usepackage{wrapfig}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{authblk}
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{float}
+
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+
+\begin{comment}
+    \usepackage{amssymb}
+    \usepackage{enumerate}
+    \usepackage{array}
+    \usepackage{mathrsfs}
+    \usepackage{tikz}
+    \addto\captionsswedish{
+        \renewcommand\appendixname{Bilaga}
+        \renewcommand\appendixpagename{Bilaga}
+        \renewcommand\appendixtocname{Bilaga}
+    }
+    \tikzset{node distance=2cm, auto}
+    \usetikzlibrary{arrows}
+    \allowdisplaybreaks
+\end{comment}
+
+\begin{document}
+
+\input{title.tex}
+
+\tableofcontents
+\newpage
+
+\input{sections/section0-1.tex}
+\input{sections/section1-1.tex}
+\input{sections/section1-2.tex}
+\input{sections/section2-1.tex}
+
+
+\end{document}
