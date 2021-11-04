@@ -15,15 +15,15 @@ city.tempPerDay()
 
 ## Methods Implimented
  * tempPerDay
- * * Takes no Inputs
- * * Shows a plot with the mean temperature and the spread for each day of the year.
+   * Takes no Inputs
+   * Shows a plot with the mean temperature and the spread for each day of the year.
  * tempOnDay
- * * Takes as input the day of the year as an integer,
- * * Alternativly pass two integers Month and Day.
- * * Plots the spread of the mean temperature of that day throughout the years.
+   * Takes as input the day of the year as an integer,
+   * Alternativly pass two integers Month and Day.
+   * Plots the spread of the mean temperature of that day throughout the years.
  * covariance
- * * Takes as input another city datafile or another `tempTrender` object
- * * plots the correlation correlatin between the two cities
+   * Takes as input another city datafile or another `tempTrender` object
+   * plots the correlation correlatin between the two cities
 
 # Directory structure
 
