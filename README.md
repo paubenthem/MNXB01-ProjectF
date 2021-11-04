@@ -16,7 +16,7 @@ This repo contains the code used to generate the graphs and pdf for our final pr
  This will automatically compile all the code the first time it is used.
  * You can now use the methods we implemented directly, or run the sample code
  in the `projectDemo.cpp` by calling `projectDemo()`.
- For an interactive expirience call `projectInteractive()`
+ For an interactive expirience call `projectInteractive()`.
 
 ## Contents:
  * The `code` folder contains our root code, based on the initial skeleton 
