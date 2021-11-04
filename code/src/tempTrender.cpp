@@ -126,18 +126,19 @@ void tempTrender::tempOnDay(int dateToCalculate) const  //Make a histogram of th
 	// Calculate the standard deviation of the temperature
 	double stdev = hist->GetRMS();	
 	
-//	cout << " The mean temperature of the day " << monthToCalculate << dayToCalculate << " is " << mean << "\n" << endl;
-//	cout << " The standard deviation of the temperature is " << stdev << "\n" << endl;
-	
+	// Calculate number of entries: (can be used to calculate probability of a specific temperature on given day)
+	int entries = hist->GetEffectiveEntries();
+
+	cout << " The mean temperature of the day " << dateToCalculate << " is " << mean << "\n" << endl;
+	cout << " The standard deviation of the temperature is " << stdev << "\n" << endl;
+	cout << " The number of entries in the histogram is " << entries << "\n" << endl;
+
 	// Create a new canvas and draw the histogram
 	TCanvas* can = new TCanvas("can", "The temperature of a given day", 900, 600);
 	
 	hist->Draw();
 
 }
-// void tempTrender::tempPerDay() const {} //Make a histogram of the average temperature of each day of the year
-// void tempTrender::hotCold() const {} //Make a histogram of the hottest and coldest day of the year
-// void tempTrender::tempPerYear(int yearToExtrapolate) const {} //Make a histogram of average temperature per year, then fit and extrapolate to the given year
 
 
 void tempTrender::covariance(std::string& file2Path){
