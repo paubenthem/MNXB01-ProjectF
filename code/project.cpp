@@ -13,10 +13,8 @@ bool isInt(std::string& str) {
 	return true;
 }
 
-void project(std::string datapath) {
-	
-	
 
+void projectInteractive(std::string datapath) {
 	std::cout << "Path " << datapath << " specified." << std::endl;
 
 	tempTrender t(datapath);

@@ -32,6 +32,7 @@ void rootlogon() {
   // gSystem->AddLinkedLibs(" -L/home/einarelen/project/external/lib64 -Wl,-rpath=/home/einarelen/project/external/lib64 -lfmt");
 
   gROOT->ProcessLine(".L src/tempTrender.cpp+"); //Load the classes that we want to use automatically - Convenient!
+  gROOT->ProcessLine(".L projectDemo.cpp+"); //The + means to recompile only if it changed sine last time
   gROOT->ProcessLine(".L project.cpp+"); //The + means to recompile only if it changed sine last time
   //Now you can type project() to invoke the function defined in project
   //You can also create and invoke functions in a temptrender manually by doing e.g. tempTrender t(pathToFile); t.hotCold();
