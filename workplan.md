@@ -10,6 +10,7 @@
   * Anton works on Example 3.2. The result is a histogram with the temperature for every day of the year.  
   * Edmund works a result that is not in the Examples. Calculating the covariance of temperatures between two cities. The result is a plot of the covariance between two cities.
   * Paulina writes skeleton for the report.
-  * Dustin is in charge of the report formatting.
+  * Dustin is in charge of the Latex files
+  * Edmund and Dustin do troubleshooting
 
- Each person writes a report on their problem, presents the results produced and the approach used. For each result there should be at least one plot.
+ Each person writes about their problem, presents the results produced and the approach used. For each result there should be at least one plot.
