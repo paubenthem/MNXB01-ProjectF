@@ -5,6 +5,7 @@
 #include <sstream>
 #include <TDatime.h>
 
+
 // function that checks whether a string is a number
 bool isInt(std::string& str) {
 	for (auto &ch: str) {
@@ -13,11 +14,14 @@ bool isInt(std::string& str) {
 	return true;
 }
 
-
-void projectInteractive(std::string datapath) {
-	std::cout << "Path " << datapath << " specified." << std::endl;
+void project() {
+	
+	std::string datapath;
+	std::cout << "Enter the datapath to the city:" << std::endl;
+	std::cin >> datapath;
 
 	tempTrender t(datapath);
+
 
 	size_t start = datapath.find_last_of('/');
     size_t end = datapath.find_last_of('.');
@@ -55,6 +59,7 @@ void projectInteractive(std::string datapath) {
 		} 
 			
 	} 
+
 	
 	std::cout << "For temperature on a given day, would you like to enter month and day or number of day in the year? (md/n):" << std::endl;
 	std::string ans2;
@@ -86,7 +91,7 @@ void projectInteractive(std::string datapath) {
 		t.tempOnDay(n);
 	}	
 	
-	
+
 	t.tempPerDay();
 	
 	if (ans1 == "y") {
