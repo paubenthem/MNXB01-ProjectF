@@ -5,6 +5,7 @@
 #include <sstream>
 #include <TDatime.h>
 
+
 // function that checks whether a string is a number
 bool isInt(std::string& str) {
 	for (auto &ch: str) {
@@ -20,6 +21,7 @@ void project() {
 	std::cin >> datapath;
 
 	tempTrender t(datapath);
+
 
 	size_t start = datapath.find_last_of('/');
     size_t end = datapath.find_last_of('.');
@@ -57,6 +59,7 @@ void project() {
 		} 
 			
 	} 
+
 	
 	std::cout << "For temperature on a given day, would you like to enter month and day or number of day in the year? (md/n):" << std::endl;
 	std::string ans2;
