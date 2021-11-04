@@ -23,7 +23,7 @@ city.tempPerDay()
    * Plots the spread of the mean temperature of that day throughout the years.
  * covariance
    * Takes as input another city datafile or another `tempTrender` object
-   * plots the correlation correlatin between the two cities
+   * plots the correlation between the two cities
 
 # Directory structure
 
