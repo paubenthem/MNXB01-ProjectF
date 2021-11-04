@@ -16,69 +16,74 @@ tempTrender::tempTrender(const std::string& filePath) {
 }
 
 void tempTrender::tempPerDay() const {
-    Int_t year;
-    Int_t month;
-    Int_t day;
-    Int_t h;
-    Int_t min;
-    Int_t sec;
-    Int_t prev_day;
-    Int_t prev_month;
-    Int_t prev_year;
-    Double_t temp;
-    Double_t day_temp_sum;
-    Double_t day_mean;
-    Int_t same_day_num;
-    Int_t bin_num;
-
-
-    TH1D* hTemp = new TH1D("hTemp", "Mean temperature change throughout the year; Day of the year; Mean temperature", 
+	// Initialization of variables	
+	Int_t year = 0;
+    Int_t month = 0;
+    Int_t day = 0;
+    Int_t h = 0;
+    Int_t min = 0;
+    Int_t sec = 0;
+    Double_t temp = 0;
+    Double_t day_temp_sum = 0;
+    Double_t day_mean = 0;
+    Int_t same_day_num = 0;
+    Int_t bin_num = 0;
+	
+	// Histogram creation. 366 days in leap year. 		 
+    TH1D* hTemp = new TH1D("hTemp", "Mean temperature change throughout the year; Day of the year; Mean temperature [#circC]", 
                 366, 1, 367);
-    ifstream file(filePath_m);
+    ifstream file(filePath_m); // Open file 
+
+    Int_t first = 1; // variable used to check whether the while loop is on first iteration
+    Double_t normalization[366]; // array for normalizing bins, counts # of times bin was filled
+    for (Int_t i = 0; i<366; i++) normalization[i]=0; // setting array to 0's
 
     TTimeStamp prev_stamp(0, 0, 0, 0, 0, 0, 0);
-    Int_t first = 1;
-    Double_t normalization[366]; 
-    for (Int_t i = 0; i<366; i++) normalization[i]=0;
-    Int_t count = 0;
+	// Main loop of the file, runs until the last line of the file
     while (file >> year >> month >> day >> h >> min >> sec >> temp) {
-    count++;
-    TTimeStamp stamp(year, month, day, h, min, sec);
+		TTimeStamp stamp(year, month, day, h, min, sec);
 
+		if (stamp == prev_stamp) {          // logic for the same date     
+		    day_temp_sum += temp;			// add temperature over the day and count entries
+		    same_day_num++;
+		}
+		else {
+		    if (first != 1) {           // add to histogram if not looping over first line
+		        day_mean = day_temp_sum/same_day_num;
+		        bin_num = prev_stamp.GetDayOfYear();  
 
-    if (stamp == prev_stamp) {              // add temperature over the day and count entries 
-        day_temp_sum += temp;
-        same_day_num++;
+		        hTemp->Fill(bin_num, day_mean); // add to histogram into correct bin
+		        normalization[bin_num-1] = normalization[bin_num-1] + 1; 
+				//std::cout << "norm: " << normalization[bin_num-1] << std::endl;
+		    }
+		    prev_stamp = stamp;
+		    same_day_num = 1;
+		    day_temp_sum = temp;
+		}
+		first = 0;
+
+	}
+	// adds the last group of dates to the histogram
+	day_mean = day_temp_sum/same_day_num;
+	bin_num = prev_stamp.GetDayOfYear();
+	hTemp->Fill(bin_num, day_mean);
+	normalization[bin_num-1] += 1;
+
+	TCanvas* c2 = new TCanvas("c2", "Mean temperature over the year", 900, 600);
+	
+	// Normalization of temperature and associated errors	
+	Double_t mean_value;
+	for (Int_t i = 1; i < 367; i++) {
+	    mean_value = (hTemp->GetBinContent(i))/normalization[i-1];
+	    hTemp->SetBinContent(i, mean_value);
+	    hTemp->SetBinError(i, TMath::Sqrt(TMath::Abs(mean_value)));
+		//std::cout << "Bin: " << i << std::endl;
     }
-    else {
-        if (first != 1) {           // add to histogram if not looping over first line
-            day_mean = day_temp_sum/same_day_num;
-            bin_num = prev_stamp.GetDayOfYear();  
-            //cout << "Day number: " << bin_num << endl;
-            hTemp->Fill(bin_num, day_mean); // add to histogram into correct bin
-            normalization[bin_num-1] = normalization[bin_num-1] + 1; 
-            //cout << "Bin: " << bin_num << ". Normalization: " << normalization[bin_num-1] << endl;
-        }
-
-        prev_stamp = stamp;
-        same_day_num = 1;
-        day_temp_sum = temp;
-    }
-    first = 0;
-
-    }
-    //cout << "loop ran for " << count << endl;
-
-    TCanvas* c2 = new TCanvas("c2", "phi canvas", 900, 600);
-    Double_t mean_value;
-    for (Int_t i = 1; i < 367; i++) {
-        mean_value = (hTemp->GetBinContent(i))/normalization[i-1];
-        //cout << "Bin: " << i << ". Normalization: " << normalization[i-1]<< ". Value: "<< mean_value << endl;
-        hTemp->SetBinContent(i, mean_value);
-        hTemp->SetBinError(i, TMath::Sqrt(TMath::Abs(mean_value)));
-    }
-
-    //hTemp->SetMinimum(-400);
+	Double_t maximum, minimum;
+	maximum = hTemp->GetMaximum();
+	minimum = hTemp->GetMinimum();
+	std::cout << "For the average temperature throughout the year:" << std::endl; 
+	std::cout << "Max: " << maximum << ", Min: " << minimum << std::endl;
     hTemp->Draw();	
 } 
 
