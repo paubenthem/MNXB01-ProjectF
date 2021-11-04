@@ -91,7 +91,7 @@ void project() {
 		t.tempOnDay(n);
 	}	
 	
-	
+
 	t.tempPerDay();
 	
 	if (ans1 == "y") {
