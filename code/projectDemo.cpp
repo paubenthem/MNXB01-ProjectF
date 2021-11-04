@@ -8,6 +8,6 @@ void projectDemo(){
     city1.tempOnDay(03,02);
     city1.tempPerDay();
 
-    std::string cityDataPath2 = "../data_clean/Malmö A.csv";
+    std::string cityDataPath2 = "../data_clean/Falsterbo.csv";
     city1.covariance(cityDataPath2);
 }
