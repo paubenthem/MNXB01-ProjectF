@@ -1,0 +1,536 @@
+commit 7476dfed1a2c5c95a0249187cf02f0af09e2e51d
+Merge: 4c409a6 949b820
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:53:36 2021 +0100
+
+    Merge pull request #15 from DustinLDaii/patch-1
+    
+    Update workplan.md
+
+commit 949b8207f6bfde2b0bcba2cac9fdf56100956bc3
+Author: DustinLDaii <92444679+DustinLDaii@users.noreply.github.com>
+Date:   Thu Nov 4 21:50:54 2021 +0100
+
+    Update workplan.md
+
+commit 4c409a69cc7877a9e5662b93e95a8bdde4355157
+Merge: 2172ade f147f9e
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:49:43 2021 +0100
+
+    Merge pull request #12 from paubenthem/patch-3
+    
+    Update README.md
+
+commit 2172ade8191ba46f26accc2b067f24e5646915d8
+Merge: febd909 f608d11
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:49:34 2021 +0100
+
+    Merge pull request #14 from DustinLDaii/main
+    
+    Update README.md
+
+commit f608d11a9cfab93f6c50d61572500894a3009d7c
+Author: DustinLDaii <92444679+DustinLDaii@users.noreply.github.com>
+Date:   Thu Nov 4 21:48:24 2021 +0100
+
+    Update README.md
+
+commit f147f9e5b7b5cb131862245f1a784f800bc6d6ef
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 21:41:13 2021 +0100
+
+    Update README.md
+
+commit febd9092684e07a606d78d7c4ab305b62bb50c09
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:31:40 2021 +0100
+
+    Update README.md
+
+commit 77b4ec9de2d14284b3efd754559c7aaf7426d877
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:28:44 2021 +0100
+
+    Update README.md
+
+commit b1906ffdafb29f6ad682141a6a16288220ea3561
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:20:21 2021 +0100
+
+    [feature] added code from Paulina
+
+commit f3c93c36460b33655f69dba1d3a9552a2469bd89
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 21:00:17 2021 +0100
+
+    [bugfix] fixed the demo file
+
+commit 671a892be16290cef1ba3a8d7042f974052cb11c
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:37:39 2021 +0100
+
+    Update README.md
+
+commit fe7eb67cc53e4f3c384e63f7a9377eeda871ac84
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:37:23 2021 +0100
+
+    Update README.md
+
+commit 63236858d8511d4c77d6d8ff637e0b6149e27612
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:23:47 2021 +0100
+
+    [refactor] changed project func name
+    
+    Chanced the project function name to projectInteractive
+
+commit d72dfd68c0aca6f120d291a850ba853366b56c41
+Merge: 8f61ccf 433ac3e
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:20:24 2021 +0100
+
+    Merge pull request #11 from antonpalets/main
+    
+    Updated UI to work with Swedish letters
+
+commit 433ac3e85756be0ad1a93f05cfc8cdbb7dd5118c
+Merge: 2c0fa39 8f61ccf
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:15:54 2021 +0100
+
+    Merge branch 'main' into main
+
+commit 8f61ccf432cc91143c290059fc5c78e00f41de03
+Merge: 67cd8fa 927bfa8
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:14:29 2021 +0100
+
+    Merge pull request #10 from paubenthem/patch-2
+    
+    Update README.md
+
+commit 67cd8fa60b59e87970ce8625a8ea96d8933c5893
+Merge: db198d3 1824a7f
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 20:14:17 2021 +0100
+
+    Merge pull request #9 from paubenthem/patch-1
+    
+    Update README.md
+
+commit 2c0fa39ba8f26590d749f0383be4b4363df9df0b
+Merge: 0829ef3 232c268
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Thu Nov 4 20:12:50 2021 +0100
+
+    Merge conflict resolved
+
+commit 0829ef3a20c76648ca45747bd6041ad223076717
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Thu Nov 4 20:05:55 2021 +0100
+
+    Now works for files with Swedish letters. Fixed redundant print messages.
+
+commit 927bfa8f3425aba15ee45133342cfc86bf31f1f2
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 19:46:59 2021 +0100
+
+    Update README.md
+
+commit 1824a7fb56b5ccd7d711e066c4d555bb353c70b7
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 19:07:41 2021 +0100
+
+    Update README.md
+
+commit db198d37e5131f7d13d0531d37b3835893936b4f
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 18:58:50 2021 +0100
+
+    Update README.md
+
+commit 49090e465a70c8887049f5babca1699f5f3d5585
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 18:57:58 2021 +0100
+
+    Update README.md
+
+commit fbab1f2833c1d055685084b9a833ea1608748e7e
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 18:56:25 2021 +0100
+
+    Update README.md
+
+commit 7817f3f3928eb21a343f20c1749cd0a8cfdcc34c
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 18:55:20 2021 +0100
+
+    Update README.md
+
+commit f8a1a63a4f0ad0d1db4e682ce88db936e78251e0
+Merge: c4ec158 daeb958
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 18:54:24 2021 +0100
+
+    Merge pull request #8 from paubenthem/main
+    
+    Update Readme.md
+
+commit daeb9582d329d8a6fbe3111ae9eb222e5affc3f9
+Merge: c4ec158 b6db0a3
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 18:32:51 2021 +0100
+
+    Merge pull request #3 from paubenthem/paubenthem-Readme
+    
+    Update Readme.md
+
+commit b6db0a34f50e6b3cadc903d0e835e43a9adee2cb
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 18:32:23 2021 +0100
+
+    Update Readme.md
+
+commit c4ec1581316d31cc79878d69b889e869f4ac03d9
+Merge: 4d00602 df64b4e
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 16:37:25 2021 +0100
+
+    Merge branch 'antonpalets-main' into main
+
+commit df64b4e4a4ae8e090cbc37a74ada0f553bd2feb4
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 16:36:10 2021 +0100
+
+    [feature] Changed the merge
+    
+    This is done so that we retain the old functionality and
+    still have the new code as well
+
+commit af3c3975d5b19cff815b22af8321b4505391e548
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Thu Nov 4 14:45:02 2021 +0100
+
+    Removed unnecessary cout's. Changed first to bool
+
+commit c419502a98559f61c8791d00d16eb29ca4d576aa
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Thu Nov 4 14:01:56 2021 +0100
+
+    Added user input. Bugs fixed in tempPerDay
+
+commit 8f93673639f6cfd0e4ad27ee08e0d40e4f81fea1
+Merge: 4d00602 232c268
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 15:23:04 2021 +0100
+
+    Merge branch 'main' of git://github.com/antonpalets/MNXB01-ProjectF into antonpalets-main
+
+commit 4d006026834858ca268ac8b2b3376e9f85a055f3
+Merge: 7f8ba82 89be7b7
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 14:46:36 2021 +0100
+
+    Merge branch 'main' of github:edmundlehsten/MNXB01-ProjectF into main
+
+commit 7f8ba8253e4f9f1798a85b295b8995f0fe484bd6
+Merge: dec5b2d 359203f
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 14:45:29 2021 +0100
+
+    Merge branch 'paulina-main' into main
+
+commit 232c2687b1fe9f53301f30e1d9432049335a3698
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Thu Nov 4 14:45:02 2021 +0100
+
+    Removed unnecessary cout's. Changed first to bool
+
+commit 359203f056cda7c619369cdb85622fe34bde8639
+Merge: dec5b2d 2b11278
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 14:44:03 2021 +0100
+
+    Merge branch 'main' of git://github.com/paubenthem/MNXB01-ProjectF into paulina-main
+
+commit 89be7b7f9425c3d0dd3712b4c1f5981964b66118
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 14:42:19 2021 +0100
+
+    Update README.md
+    
+    Fixed issue with the headers in the md README file
+
+commit dec5b2df8dbcb9ecf0cf9669b9601e4de7cc9421
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 14:40:13 2021 +0100
+
+    [feature] improved the README.md files
+
+commit bffe4dd7fbb9e78c856e73a3f94ead7ba261b706
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Thu Nov 4 14:01:56 2021 +0100
+
+    Added user input. Bugs fixed in tempPerDay
+
+commit c58dbb90b08f8a1987ea5ccde0a0c5f2f664d437
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 10:35:42 2021 +0100
+
+    [feature] The preprocess script not validates input
+
+commit cb554bb26904f879cded053771682b69510af6ad
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Thu Nov 4 10:23:51 2021 +0100
+
+    [restructure] removed files that wernt used
+
+commit 2b1127851f32359e83310735b540bc1ffe58efae
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 10:17:41 2021 +0100
+
+    Workplan latest update
+
+commit b641907774c00c62267a5e09a2713deaeb8bb4f1
+Merge: d4c3ac2 daf80ae
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 10:00:08 2021 +0100
+
+    Merge pull request #2 from paubenthem/paubenthem-workplan
+    
+    Updated workplan
+
+commit daf80ae930b2f554ba5331e83131fdb5c2485eab
+Author: paubenthem <90843079+paubenthem@users.noreply.github.com>
+Date:   Thu Nov 4 08:58:00 2021 +0100
+
+    Update and rename workplan.txt to workplan.md
+
+commit 5555571691f647006b6f05fee150200de8dd4cb5
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 19:57:59 2021 +0100
+
+    [bugfix] using only .csv data files
+
+commit d4c3ac20791fd8b3450ef9571aa0e21f3e273d4a
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 19:50:10 2021 +0100
+
+    [bugfix] the project method now works
+
+commit 9ed17dd19212a5cafd569fba4f0bc1cb00a70861
+Merge: 4dc0ac3 5d4e424
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 19:20:44 2021 +0100
+
+    Merge branch 'temp1day' into main
+
+commit 4dc0ac3bb54b017bf77b4bb015bbd52a3c81f919
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 19:19:55 2021 +0100
+
+    [feature] added time lag covariance and fixed bug with merge conflict
+
+commit 5d4e424cd4c43f5f8ce956ab4c44377af0296e06
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 17:39:30 2021 +0100
+
+    [feature] merged the two different tempOnDay methods into one
+
+commit 4b42c3ee63d123603fa40fa5e62bdcd9753cdb21
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 16:03:09 2021 +0100
+
+    [bugfix] fixed issues caused by merge
+
+commit ccf8edacf6d3f0528e6326ccc6678d997643ac33
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:52:38 2021 +0100
+
+    [restructure] removed some old files that were not used
+
+commit ac883e5795a6aa9b3f50040c61354407859bb136
+Merge: 809e503 f96f9d2
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:48:54 2021 +0100
+
+    Merge pull request #4 from edmundlehsten/covariance
+    
+    Covariance Plot
+
+commit 809e503953aa26bb48f4dbeb786ecbb19b1b0963
+Merge: 8521eaf 4276808
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:47:46 2021 +0100
+
+    Merge pull request #2 from antonpalets/main
+    
+    tempPerDay now in the tempTrender file with absolute paths
+    
+    Resolved merge conflicts, should work now
+
+commit 4276808d77fd9d35782680116d2a5d8a0c8f1bbc
+Merge: 5936c4b 8521eaf
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:47:10 2021 +0100
+
+    Merge branch 'main' into main
+
+commit 8521eaf462ef79b30f7e62f68f8cda9402a005ed
+Merge: 095fa8a 01023b8
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:38:32 2021 +0100
+
+    Merge pull request #3 from paubenthem/main
+    
+    Part 3.1 included
+
+commit 01023b8f82ff2b9068ca8a8194b312556a3880c1
+Merge: f3cdd03 095fa8a
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:38:15 2021 +0100
+
+    Merge branch 'main' into main
+
+commit 095fa8a86722ff19056047c0c1c225415d79349a
+Merge: bc35a75 fa07b60
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:27:29 2021 +0100
+
+    Merge branch 'bash' into main
+
+commit f96f9d22abac1a2e4bbcebbf5003b3aa3d7f5b86
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:25:11 2021 +0100
+
+    [feature] changed default canvas parameters
+
+commit fa07b6069f863aad344931893acff0fb5fd6fa43
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:14:51 2021 +0100
+
+    [feature] added comments to bash script
+
+commit 57a506e43d5d60dc2079ea949e6ac68032c0db75
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 15:00:21 2021 +0100
+
+    [bugfix] now works for old versions of root
+
+commit f3cdd03c71b6e4683a0109d0d91aa71594d6bd6a
+Merge: bc35a75 c822a76
+Author: Paulina Benthem <paubenthem@gmail.com>
+Date:   Wed Nov 3 14:21:23 2021 +0100
+
+    Merge branch 'temp1day' into main
+
+commit c822a7637ae9bdbb0ba64cc5fcd6a72d75f324ff
+Author: Paulina Benthem <paubenthem@gmail.com>
+Date:   Wed Nov 3 14:20:33 2021 +0100
+
+    Part 3.1
+
+commit 8ac19ec9d8fc1c62c9667437d46d20b75e882c84
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 13:26:35 2021 +0100
+
+    [feature] made covariance plot with 0 time lag
+
+commit fafbfd7d7716059c767efe264928e34c9c0d3ae1
+Author: Paulina Benthem <paubenthem@gmail.com>
+Date:   Wed Nov 3 12:49:30 2021 +0100
+
+    Ex 3.1
+
+commit 5936c4bd29a29cc9f609a7b8d1948c619723ea53
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Wed Nov 3 12:40:32 2021 +0100
+
+    Incorporated macro into tempTrender.cpp. cahnges in header and main project files.
+
+commit 7522d452713e6d19aca9f83f70cc8ec78e104e43
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 10:42:59 2021 +0100
+
+    [feature] implimented the days_in_month func
+
+commit 590078e4463ea69091e5536e78c526f8a6f785bb
+Merge: a3f67b6 eaca78d
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Wed Nov 3 10:35:53 2021 +0100
+
+    Added a ROOT macro that produces plot as in 3.2 given a nice csv.
+
+commit eaca78da1394e9e26fcfc42e32c25bc7471ba786
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Wed Nov 3 10:30:37 2021 +0100
+
+    Added a ROOT macro that produces plot as in 3.2 given a nice csv.
+
+commit bc35a75a00e5844345de19b2c26a5c2840b86719
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 10:05:13 2021 +0100
+
+    [bugfix] now also removes if the quality code is Y
+
+commit 2be7f4373a9d8601e980dc485b9d29faa5cc4dc3
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 10:03:00 2021 +0100
+
+    [feature] setup header for cov plot
+
+commit 2e5e641a0a0fac925c1839feb6ed3598a5d43ccc
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Wed Nov 3 09:32:15 2021 +0100
+
+    [bugfix] fixed the issue with the 'Malmö' station
+
+commit a3f67b609e72600de964c8067260d0379eb42e37
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Tue Nov 2 15:27:56 2021 +0100
+
+    Added basic skeleton and datasets.
+
+commit 672f5f22fab2b4edaf9cffdc97a1a38cd03b697c
+Author: Ender <edmund.lehsten@gmail.com>
+Date:   Tue Nov 2 20:11:34 2021 +0100
+
+    [feature] made a preprocess script to clean the data
+    
+    There is still a bug for the Malmö, need to figure out why
+
+commit 0268e0c15d21dae8562b4171d32be7e7444ca468
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Tue Nov 2 15:27:56 2021 +0100
+
+    Added basic skeleton and datasets.
+
+commit f9200e82335b67ffd26dbca055c1db64dfef3351
+Merge: e13be67 77edaa4
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Tue Nov 2 15:18:20 2021 +0100
+
+    Merge pull request #1 from antonpalets/main
+    
+    Saved initial work plan into main repo
+
+commit 77edaa4c7ebc634bcf0c646028ffa4b4694f8e5f
+Author: Anton Palets <an2228pa-s@student.lu.se>
+Date:   Tue Nov 2 15:16:52 2021 +0100
+
+    Wrote initial workplan.
+
+commit e13be67a9dc27bc47511e7136859d9ae7726004c
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Tue Nov 2 14:39:23 2021 +0100
+
+    Update README.md
+
+commit b1d60d56994445882d779bfe823fd0868f46cf8d
+Author: Edmund <edmund.lehsten@gmail.com>
+Date:   Wed Oct 20 10:22:50 2021 +0200
+
+    Initial commit
