@@ -26,7 +26,7 @@ city.tempPerDay()
    * Plots the correlation between the two cities.
 
 # Directory structure
-The base directory here contains our example code file (`project.cpp`) which
+The base directory here contains our example code file (`projectDemo.cpp`) which
 exemplifies the different methods that we implimented for our project.
 It also contains the `rootlogon.C` file which manages the automatic compiling
 and linking of our code.
