@@ -1,7 +1,7 @@
 # MNXB01-ProjectF
 This repo contains the code used to generate the graphs and pdf for our final project report.
 
-##To use our code:
+## To use our code:
 
  * To use the code clone the repository.
  * Then run the preprocess.sh script passing in the foulder containing the raw data
@@ -17,7 +17,7 @@ This repo contains the code used to generate the graphs and pdf for our final pr
  * You can now use the methods we implipmented directly, or run the sample code
  in the `project.cpp` py calling `project()`.
 
-##Contents:
+## Contents:
  * The `code` foulder contains our root code that is based on the initial skeleton 
 provided by the course MNXB01 given at lunds university.
  * The `datasets` and `raw data`  conatin the raw data which the course instructors
