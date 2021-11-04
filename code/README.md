@@ -1,4 +1,4 @@
-#Usage 
+# Usage 
 To use our code run root in this directory. When running it the first time it 
 will automatically compile the different scripts. For a sample usage see the 
 code in `project.cpp`. To call the `project` function in `project.cpp` call 
