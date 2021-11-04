@@ -1,7 +1,7 @@
 # Usage 
 To use our code run root in this directory. When running it the first time it 
 will automatically compile the different scripts. For a sample usage see the 
-code in `project.cpp`. To call the `project` function in `project.cpp` call 
+code in `projectDemo.cpp`. To call the `project` function in `project.cpp` call 
 `project()` in the root terminal.
 
 To run our different methods first make a `tempTrender` object 
