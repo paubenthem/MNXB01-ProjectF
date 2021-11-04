@@ -14,7 +14,7 @@ bool isInt(std::string& str) {
 	return true;
 }
 
-void project() {
+void projectInteractive() {
 	
 	std::string datapath;
 	std::cout << "Enter the datapath to the city:" << std::endl;
